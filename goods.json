@@ -8,5 +8,10 @@
         "name": "cherry",
         "cost": 100,
         "image": "images/cherry.png"
+    },
+    "3":  {
+        "name": "lemon",
+        "cost": 120,
+        "image": "images/lemon.png"
     }
 }
