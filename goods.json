@@ -14,4 +14,10 @@
         "cost": 120,
         "image": "images/lemon.png"
     }
+    ,
+    "4":  {
+        "name": "lemon",
+        "cost": 90,
+        "image": "images/tomato.png"
+    }
 }
