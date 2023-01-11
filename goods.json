@@ -1,0 +1,12 @@
+{
+   "1":  {
+    "name": "apple",
+    "cost": 12,
+    "image": "images/apple.png"
+    },
+    "2":  {
+        "name": "cherry",
+        "cost": 100,
+        "image": "images/cherry.png"
+    }
+}
