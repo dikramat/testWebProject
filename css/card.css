@@ -1,0 +1,33 @@
+.card{
+    width: 400px;
+    min-height: 500px;
+    border: 1px solid #444;
+    padding: 20px;
+}
+body {
+    font-family: Tahoma, sans-serif;
+    color: gray;
+}
+p {
+    margin: 8px 0   ;
+}
+h2 {
+    text-align: center;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.resume{
+    border-bottom: 1px solid #444;
+    margin: 5px 0;
+    padding-bottom: 5px;
+}
+span{
+    font-weight: bold;
+    width: 175px;
+    display: inline-block;
+}
+.card p:nth-child(even){
+    background: #c1c1c1;
+}
