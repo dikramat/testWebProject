@@ -7,7 +7,11 @@ $.getJSON('goods.json', (data) => {
     showCart();
 
     function showCart() {
-        if(cart){
+        if($.isEmptyObject(cart)){
+            let out = 'Корзина пуста. Добавте товар в корзину. <a href="index.html">Главная страница</a>';
+            $('#my-cart').html(out);
+        }
+        else{
         let out = '';
             for(let i in cart) {
                 out += '<button class="delete" data-atr="'+i+'">Delete</button>';
@@ -23,8 +27,6 @@ $.getJSON('goods.json', (data) => {
             $('.plus').on('click', plusGoods);
             $('.minus').on('click', minusGoods);
             $('.delete').on('click', deleteGoods);
-        }
-        else{
             
         }
     } 

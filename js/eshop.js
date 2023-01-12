@@ -43,5 +43,6 @@ function showMiniCart() {
     for(let j in cart) {
         out += j + ' --- ' + cart[j] + '<br>';
     }
+    out += '<br><a href="cart.html">Корзина</a>'
     $('#mini-cart').html(out);
 }
