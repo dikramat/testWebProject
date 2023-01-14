@@ -5,9 +5,39 @@
     margin: 10px;
     float: left;
     text-align: center;
+    cursor: pointer;
 }
 
 .single-goods button {
     display: block;
     margin: 20px auto;
+}
+
+.single-goods:hover {
+    box-shadow: 1px 1px 5px rgb(24, 24, 24);
+}
+.single-goods:active {
+    background-color: purple;
+}
+
+.main-menu {
+    background: pink;
+}
+
+.main-menu ul li {
+    display: inline-block;
+}
+
+.response-menu {
+    width: 200px;
+    background: cyan;
+    position: fixed;
+    left: -190px;
+    top: 0;
+    bottom: 0;
+    transition: all ease 0.5s;
+}
+
+.response-menu:hover {
+    left: 0;
 }
