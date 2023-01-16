@@ -62,7 +62,7 @@ label {
     height: 32px;
     display: block;
     margin: 10px auto;
-    background-image: url('/icons/bottom.png');
+    background: url('/icons/bottom.png');
     background-size: cover;
     cursor: pointer;
 }
