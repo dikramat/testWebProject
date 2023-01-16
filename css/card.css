@@ -3,6 +3,8 @@
     min-height: 500px;
     border: 1px solid #444;
     padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px #c0c0c0;
 }
 body {
     font-family: Tahoma, sans-serif;
@@ -16,7 +18,8 @@ h2 {
 }
 img {
     display: block;
-    max-width: 100%;
+    max-width: 80%;
+    margin: 10px auto;
 }
 .resume{
     border-bottom: 1px solid #444;
@@ -30,4 +33,36 @@ span{
 }
 .card p:nth-child(even){
     background: #c1c1c1;
+}
+
+.description > p {
+    width: 100%;
+    margin: 20px auto;
+}
+
+#bottom-button {
+    display: none;
+}
+
+#bottom-button:checked {
+}
+
+#bottom-button + .description {
+    display: none;
+}
+#bottom-button:checked + .description {
+    display: block;
+}
+#bottom-button:checked + .description + label{
+    background-image: url('/icons/up.png');
+}
+
+label {
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 10px auto;
+    background-image: url('/icons/bottom.png');
+    background-size: cover;
+    cursor: pointer;
 }
