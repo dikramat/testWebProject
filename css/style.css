@@ -42,3 +42,33 @@
     left: 0;
 }
 
+.my-slider {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.slick-slide {
+    margin:  0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: 0.2;
+}
+
+.slick-activ{
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}

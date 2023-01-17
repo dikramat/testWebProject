@@ -6,32 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Window</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
-    <!-- <nav class="main-menu">
-        <ul>
-            <li><a href="#">One</a></li>
-            <li><a href="#">One</a></li>
-            <li><a href="#">One</a></li>
-            <li><a href="#">One</a></li>
-            <li><a href="#">One</a></li>
-            <li><a href="#">One</a></li>
-        </ul>
-    </nav>
-    <nav class="response-menu">
-        <ul>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Two</a></li>
-        </ul>
-    </nav> -->
 <div id="mini-cart"></div>
+<div class="my-slider">
+    <div><img src="images/apple.png" alt=""></div>
+    <div><img src="images/cherry.png" alt=""></div>
+    <div><img src="images/lemon.png" alt=""></div>
+    <div><img src="images/strawberry.png" alt=""></div>
+    <div><img src="images/tomato.png" alt=""></div>
+</div>
 
 <div id="goods"></div>    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>  
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./slick/slick.js"></script>  
 <script src="js/eshop.js"></script>
+<script>
+        $(document).ready(function() {
+            $('.my-slider').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1
+            });
+        })
+</script>
 </body>
 </html>
